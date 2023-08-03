@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Nacionalidade</h1>
+    <input type="text" name="nação" id="nação">
+    <input type="button" value="verificar" onclick="calcular()">
+    <div id="res">
+
+    </div>
+<script>
+    
+ function calcular(){
+    var n = window.document.getElementById('nação')
+    var res = window.document.getElementById('res')
+
+    if ( n == brasil){
+        res.innerHTML = `brasileiro`
+    }
+
+    
+ }
+   
+
+
+</script>
+
+</body>
+</html>
