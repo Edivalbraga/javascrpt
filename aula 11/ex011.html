@@ -7,24 +7,27 @@
 </head>
 <body>
     <h1>Nacionalidade</h1>
-    <input type="text" name="nação" id="nação">
+    <input type="text" name="nação" id="nacao">
     <input type="button" value="verificar" onclick="calcular()">
     <div id="res">
 
     </div>
 <script>
-    
- function calcular(){
-    var n = window.document.getElementById('nação')
-    var res = window.document.getElementById('res')
-
-    if ( n == brasil){
-        res.innerHTML = `brasileiro`
-    }
-
-    
- }
    
+   
+
+   function calcular(){
+    const n = document.querySelector("#nacao")
+    const res = document.querySelector("#res")
+    if (n.value == "brasil"){
+        
+        res.innerHTML= "brasileiro"
+    }else{
+        res.innerHTML="estranegeiro"
+        
+    }
+   }
+
 
 
 </script>
