@@ -5,6 +5,7 @@ const display = document.querySelector(".display")
 const teclaOn = document.getElementById("ton")
 const limpar = document.getElementById("tlimpar")
 const tigual= document.getElementById("tigual")
+const tcpy= document.getElementById("tcpy")
 
 let sinal = false
 let decimal=false
@@ -60,6 +61,12 @@ tigual.addEventListener("click",(evt)=>{
     decimal=false
     const res =eval(display.innerHTML)
     display.innerHTML=res
+})
+tcpy.addEventListener("click",(evt)=>{
+   navigator.clipboard.writeText(display.innerHTML)
+    // teste.select()
+    // teste.setSelectionRange(0,99999999)//Mobile
+    // navigator.clipboard.writeText(teste.value)
 })
 
 console.log(teclasNumericas)
