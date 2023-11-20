@@ -20,6 +20,22 @@
     border: 5px solid #888;
 
 }
+#botoes{
+  margin-left: 41.1%;
+  padding: 1px;
+
+}
+
+.btn{
+  margin: 10px;
+  width: 70px;
+  height: 30px;
+  border: 2px solid lightgray;
+  border-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: -4px;
+}
+
 p{
    margin-top: 15%;
    margin-left: 40%;
