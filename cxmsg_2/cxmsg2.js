@@ -1,16 +1,17 @@
 class Cxmsg {
-    titulo = null
-    texto = null
-    cor = null
-    destino = null
-    divmsg = null
-    constructor(config) {
-        this.titulo = config.titulo
-        this.texto = config.texto
-        this.cor = config.cor
-        this.destino = document.body
+    static cor = "#888"
+    static destino = null
+    static divmsg = null
+
+
+    static config = (config) =>{
+        this.cor=config.cor
     }
-    mostrar = () => {
+   
+     static mostrar = (titulo,texto) => {
+        this.destino = document.body
+        this.titulo = titulo
+        this.texto = texto
         this.divmsg = document.createElement("div")
         const estilo_divmsg =
             "display: flex;" +
@@ -96,9 +97,10 @@ class Cxmsg {
         rodaPeCxsmg.appendChild(btn_ok)
 
     }
-    ocultar = () => {
+     static ocultar = () => {
         this.divmsg.remove()
 
     }
 
 }
+export {Cxmsg}
